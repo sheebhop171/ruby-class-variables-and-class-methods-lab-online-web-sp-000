@@ -32,10 +32,17 @@ class Song
   def self.genre_count
     # new_hash = {}
       #iterate over genres array
-      #binding.pry
-      new_hash = Hash[@@genres.map {|genre| [genre, genre.size]}]
-      # populate new hash with key/value pairs
+      binding.pry
+      new_hash = Hash[@@genres.map {|genre| [genre, 1]}]
 
+      # populate new hash with key/value pairs
+      if new_hash.has_key?(key)
+      # check if hash already contains key of particular genres
+      if new_hash.has_key?(key)
+      # if yes, increment the value of that key by one
+        key.count + 1
+      # else create new key/value pair
+    end
   end
 
   def artist_count
