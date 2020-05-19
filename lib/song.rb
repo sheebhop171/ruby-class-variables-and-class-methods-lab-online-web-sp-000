@@ -30,10 +30,7 @@ class Song
   end
 
   def self.genre_count
-    # new_hash = {}
-      #iterate over genres array
       new_hash = Hash[@@genres.uniq.map {|genre| [genre, genre.size]}]
-      binding.pry
   end
 
   def artist_count
