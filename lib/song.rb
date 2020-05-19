@@ -32,7 +32,7 @@ class Song
   def self.genre_count
     # new_hash = {}
       #iterate over genres array
-      binding.pry
+      #binding.pry
       new_hash = Hash[@@genres.map {|genre| [genre, 1]}]
 
       # populate new hash with key/value pairs
