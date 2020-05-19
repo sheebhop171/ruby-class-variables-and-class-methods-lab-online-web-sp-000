@@ -33,8 +33,8 @@ class Song
     # new_hash = {}
       #iterate over genres array
       binding.pry
-      new_hash = Hash[@@genres.map {|genre| [genre, genre.size]}]
-      
+      new_hash = Hash[@@genres.map {|genre| [genre, " "]}]
+
   end
 
   def artist_count
