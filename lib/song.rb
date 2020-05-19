@@ -33,7 +33,7 @@ class Song
     # new_hash = {}
       #iterate over genres array
       binding.pry
-      new_hash = Hash[@@genres.map {|genre| [genre, " "]}]
+      new_hash = Hash[@@genres.map {|genre| [genre, ""]}]
 
   end
 
