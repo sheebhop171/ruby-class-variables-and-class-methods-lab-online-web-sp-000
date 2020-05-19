@@ -32,6 +32,7 @@ class Song
     @@genres.each do |key, value|
       new_hash[key] = value.count
   end
+end
 
   def artist_count
 
