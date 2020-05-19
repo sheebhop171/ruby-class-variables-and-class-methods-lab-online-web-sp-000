@@ -32,8 +32,9 @@ class Song
   def self.genre_count
     new_hash = {}
       #iterate over genres array
-    @@genres.each_key do |key|  
+    @@genres.each_key do |key|
       # populate new hash with key/value pairs
+      new_hash << key
       # check if hash already contains key of particular genres
       # if yes, increment the value of that key by one
       # else create new key/value pair
