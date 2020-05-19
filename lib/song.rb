@@ -35,8 +35,6 @@ class Song
       end 
   end
 
-  end
-
   def artist_count
 
   end
