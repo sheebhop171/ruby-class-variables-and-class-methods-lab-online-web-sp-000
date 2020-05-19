@@ -35,7 +35,7 @@ class Song
     @@genres.each do |genre|
       # populate new hash with key/value pairs
       binding.pry
-      new_hash[:genre] = value.count
+      new_hash[:genre] = genre.count
       # check if hash already contains key of particular genres
       if new_hash.has_key?(key)
       # if yes, increment the value of that key by one
