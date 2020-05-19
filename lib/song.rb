@@ -40,7 +40,7 @@ class Song
       # if yes, increment the value of that key by one
         key.count + 1
       # else create new key/value pair
-    else new_hash << [:key, value\
+    else new_hash << [:key, value]
       end
     end
   end
