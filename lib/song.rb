@@ -30,7 +30,7 @@ class Song
   def genre_count(genre, name)
       if genre[name]
         genre[name] << name
-      else 
+      else
         genre[name] = [name]
   end
 
