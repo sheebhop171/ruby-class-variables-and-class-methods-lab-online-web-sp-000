@@ -31,7 +31,7 @@ class Song
 
   def self.genre_count
     binding.pry
-    new_hash = Hash[@@genres.map {|genre| [genre, genre.count]}]
+    new_hash = Hash[@@genres.map {|genre| [genre, genre.size]}]
       #if new_hash.has_key?(genre)
       #  genre.size + 1
   end
