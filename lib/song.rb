@@ -37,7 +37,7 @@ class Song
 
       # populate new hash with key/value pairs
       if new_hash.has_key?(key)
-        genre.size +1
+        genre.size + 1
       # check if hash already contains key of particular genres
       # else create new key/value pair
     end
