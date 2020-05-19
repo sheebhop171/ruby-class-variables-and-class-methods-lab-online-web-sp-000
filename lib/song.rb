@@ -35,7 +35,6 @@ class Song
       binding.pry
       new_hash = Hash[@@genres.map {|genre| [genre, genre.size]}]
       
-    end
   end
 
   def artist_count
