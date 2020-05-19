@@ -28,11 +28,9 @@ class Song
   end
 
   def genre_count(genre, name)
-      if genre[name]
-        genre[name] << name
-      else
-        genre[name] = [name]
-      end
+    new_hash = {}
+    @@genres.each do |key, value|
+      new_hash[key] = value.count
   end
 
   def artist_count
