@@ -36,7 +36,6 @@ class Song
       new_hash = Hash[@@genres.map {|genre| [genre, genre.size]}]
       # populate new hash with key/value pairs
       
-    end
   end
 
   def artist_count
