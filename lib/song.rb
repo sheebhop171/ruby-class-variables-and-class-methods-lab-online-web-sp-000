@@ -32,7 +32,7 @@ class Song
   def self.genre_count
     new_hash = {}
       #iterate over genres array
-    @@genres.each do |genre|
+    @@genres.collect do |genre|
       # populate new hash with key/value pairs
       binding.pry
       new_hash[:genre] = genre.count
