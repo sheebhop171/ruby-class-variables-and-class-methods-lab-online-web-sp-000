@@ -36,6 +36,7 @@ class Song
       new_hash = Hash[@@genres.map {|genre| [genre, ""]}]
       if new_hash.has_key?
         new_hash[:genre] = genre
+      end
   end
 
   def artist_count
