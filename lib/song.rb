@@ -32,7 +32,7 @@ class Song
         genre[name] << name
       else
         genre[name] = [name]
-      end 
+      end
   end
 
   def artist_count
