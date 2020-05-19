@@ -36,13 +36,12 @@ class Song
       # populate new hash with key/value pairs
       new_hash << key
       # check if hash already contains key of particular genres
+      if new_hash.has_key?(key)
       # if yes, increment the value of that key by one
+        key.count + 1
       # else create new key/value pair
-
-      if @@genres.has_key?(key)
-         new_hash << key.count
-      else
-      end
+    else new_hash << [key, value]
+    end
     end
   end
 
