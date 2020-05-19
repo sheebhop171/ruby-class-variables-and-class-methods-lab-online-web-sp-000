@@ -32,14 +32,7 @@ class Song
         genre[name] << name
       else
         genre[name] = [name]
-  end
-
-    def add_student(name, grade)
-      if roster[grade]
-        roster[grade] << name
-      else
-        roster[grade] = [name]
-      end
+      end 
   end
 
   end
