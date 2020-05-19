@@ -27,11 +27,20 @@ class Song
     @@artists.uniq
   end
 
-  def genre_count
-    genre_count = {}
-    @@genres.each do |genre, song|
-      genre_count[genre]
-    end
+  def genre_count(genre, name)
+      if genre[name]
+        genre[name] << name
+      else 
+        genre[name] = [name]
+  end
+
+    def add_student(name, grade)
+      if roster[grade]
+        roster[grade] << name
+      else
+        roster[grade] = [name]
+      end
+  end
 
   end
 
