@@ -36,7 +36,7 @@ class Song
       new_hash = Hash[@@genres.map {|genre| [genre, 1]}]
 
       # populate new hash with key/value pairs
-      if new_hash.has_key?(key)
+      if new_hash.has_key?(genre)
         genre.size + 1
       # check if hash already contains key of particular genres
       # else create new key/value pair
