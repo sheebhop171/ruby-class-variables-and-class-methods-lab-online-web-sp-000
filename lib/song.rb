@@ -33,7 +33,7 @@ class Song
     new_hash = {}
     @@genres.each do |key, value|
       if @@genres.has_key?(key)
-        new_hash[key] = value #increment value by 1
+         new_hash[value] += 1
       else
       end
     end
