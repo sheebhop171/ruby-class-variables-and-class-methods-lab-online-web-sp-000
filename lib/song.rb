@@ -32,7 +32,10 @@ class Song
   def self.genre_count
     new_hash = {}
     @@genres.each do |key, value|
-      new_hash[key] = value
+      if new_hash.has_key?
+        new_hash[key] = value #increment value by 1
+      else
+      end 
     end
   end
 
