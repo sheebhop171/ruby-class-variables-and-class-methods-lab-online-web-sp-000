@@ -30,7 +30,7 @@ class Song
   end
 
   def self.genre_count
-      new_hash = Hash[@@genres.map {|genre| [genre, key]}]
+      new_hash = Hash[@@genres.map {|genre| [genre, genre.size]}]
   end
 
   def artist_count
