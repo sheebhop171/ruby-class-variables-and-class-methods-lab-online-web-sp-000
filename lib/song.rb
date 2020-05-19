@@ -35,12 +35,7 @@ class Song
       binding.pry
       new_hash = Hash[@@genres.map {|genre| [genre, genre.size]}]
       # populate new hash with key/value pairs
-      new_hash[:genre] = genre.count
-      # check if hash already contains key of particular genres
-      if new_hash.has_key?(key)
-      # if yes, increment the value of that key by one
-        key.count + 1
-      # else create new key/value pair
+      
     end
   end
 
