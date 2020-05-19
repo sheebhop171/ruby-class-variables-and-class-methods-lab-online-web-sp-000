@@ -33,7 +33,8 @@ class Song
     genre_hash = {}
     @@genres.each do |genre|
       if genre_hash[genre]
-        
+        genre_hash.each { |word| frequencies[word] +=1 }
+
       else
       genre_hash[genre] = 1
       end
