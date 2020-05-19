@@ -35,7 +35,7 @@ class Song
       if @@genres.include?(genre)
         genre.count +1
       else
-        genre_hash = genre_hash[genre] = 1
+      genre_hash[genre] = 1
       end
     end
     #@@genres.uniq.each {|g| genre_hash[g] = @@genres.count{|i| i == g }}
