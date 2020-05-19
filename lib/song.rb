@@ -34,6 +34,7 @@ class Song
       #iterate over genres array
     @@genres.each do |key, value|
       # populate new hash with key/value pairs
+      binding.pry
       new_hash[:key] = value
       # check if hash already contains key of particular genres
       if new_hash.has_key?(key)
