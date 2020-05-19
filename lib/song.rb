@@ -33,7 +33,6 @@ class Song
     new_hash = {}
     @@genres.each do |key, value|
       value = value.count
-      binding.pry
       new_hash[key] = value
     end
   end
